@@ -1,0 +1,143 @@
+@import url(vars.css);
+
+
+/*Configuración general*/
+.menu_link {
+  height: 80%;
+  aspect-ratio: 1/1;
+  background-color: #ce674d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--background);
+  text-decoration: none;
+  font-size: 2em;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  font-family: "Roboto Slab", serif;
+}
+
+.menu_btn {
+  height: 65%;
+  aspect-ratio: 1/1;
+  font-size: 2em;
+}
+
+.menu_link:hover {
+  background-color: #131842;
+}
+
+.menu_contact_link {
+  height: 85%;
+}
+
+.menu_contact_link:last-child {
+  padding: 0 0.1rem 0 0.2rem;
+}
+
+.icon {
+  color: var(--background);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--enfasis);
+  z-index: 2;
+  transition: 0.3s ease-in;
+  transform: translateX(-100%);
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu_btn_link {
+  width: 80%;
+  height: 5em;
+  background-color: #ce674d;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  text-decoration: none;
+}
+
+.menu_btn_link p {
+  color: var(--background);
+  text-decoration: none;
+  font-size: 6vw;
+  font-weight: bolder;
+  z-index: 5;
+  font-family: "Roboto Slab", serif;
+}
+
+/*Configuración de acción*/
+
+.menu_btn_link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #131842;
+  transition: 0.1s ease-out;
+  transform: translate(0, -110%);
+}
+
+.menu_btn_link:hover:before {
+  transform: translate(0, 0);
+}
+
+.menu:target {
+  transform: translate(0);
+}
+
+@media screen and (min-width: 1040px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--enfasis);
+    z-index: 2;
+    transition: 0.3s ease-in;
+    transform: translateX(-100%);
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    padding-right: 2.5em;
+  }
+
+  .menu:target {
+    transform: translate(-75%);
+  }
+
+  .menu_btn_link {
+    width: 20%;
+    height: 5em;
+    background-color: #ce674d;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    text-decoration: none;
+  }
+
+  .menu_btn_link p {
+    color: var(--background);
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: bolder;
+    z-index: 5;
+    font-family: "Roboto Slab", serif;
+  }
+}

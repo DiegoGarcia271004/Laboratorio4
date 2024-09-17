@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="menu" id="menu">
+      <a href="#" class="menu_btn_link"><p>Home</p></a>
+      <a href="#about" class="menu_btn_link"><p>About</p></a>
+      <a href="#Our-products" class="menu_btn_link"><p>Our Products</p></a>
+      <a href="#contact-us" class="menu_btn_link"><p>Contact Us</p></a>
+    </section>
+    <section class="home">
+      <nav class="navbar">
+        <a href="#menu" class="menu_link menu_btn"
+          ><i class="fa-solid fa-ice-cream"></i
+        ></a>
+        <div class="link_container">
+          <a href="#" class="menu_link menu_contact_link"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="menu_link menu_contact_link"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" class="menu_link menu_contact_link"
+            ><i class="fa-regular fa-map"></i
+          ></a>
+        </div>
+      </nav>
+
+      <div class="header">
+        <img src="imgs/logo.jpg" alt="Logo Image" class="logo" />
+
+        <div class="header-content">
+          <h1>Medium descriptive Welcome Text</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, facere
+            et nam excepturi dolorem omnis perferendis necessitatibus ipsam
+            suscipit, magnam doloremque accusantium dicta delectus obcaecati
+            aliquid a natus atque autem!
+          </p>
+        </div>
+        
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-div">
+        <h2>Who we are?</h2>
+        <img src="" alt="Upload Img here" />
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id minima
+          sit saepe cum delectus dolor earum dolore, labore rem vero. Enim
+          placeat tenetur eveniet quis? Eum rem sint error libero.
+        </p>
+
+        <img src="" alt="Second img" />
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolor
+          fuga laboriosam ipsa non, nobis reiciendis eos accusantium, mollitia
+          cupiditate pariatur tempore velit ducimus ut. Fuga nulla mollitia
+          praesentium nostrum.
+        </p>
+      </div>
+    </section>
+    <section class="Our-products" id="Our-products">
+      <div class="products-container">
+        <div class="product product-1">
+          <img src="" alt="Image" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+            error, vero molestias aliquid consequatur earum!
+          </p>
+        </div>
+        <div class="product product-2">
+          <img src="" alt="Image" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
+            error, vero molestias aliquid consequatur earum!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us" id="contact-us">
+      <div class="contact-us-content">
+        <h2>Contact Us</h2>
+
+        <div class="form">
+          <form class="contact-us-form">
+            <!-- <label for="name">Name</label> -->
+            <input
+              type="text"
+              name="name"
+              class="contact-text-input"
+              placeholder="Name"
+            />
+
+            <input type="email" class="contact-text-input" placeholder="Your E-mail">
+
+            <!-- <label for="content">Content</label> -->
+            <textarea name="txtArea" id="txt-area" class="txtArea" placeholder="Message"></textarea>
+
+            <input type="submit" value="Send" class="send" />
+          </form>
+
+          <div class="ways-of-contact">
+            <i class="fa-solid fa-phone"> </i>
+            <strong>Telephone:</strong> XXXX-XXXX <br />
+            <i class="fa-regular fa-envelope"></i>
+            <strong>Mail:</strong> urmail@extension.com <br />
+            <i class="fa-solid fa-location-pin"></i>
+            <strong>Location:</strong> Col. ur Colony, Ave. An Avenue, City,
+            Country
+          </div>
+        </div>
+      </div>
+
+      <nav class="navbar navbar_contact-us">
+        <a href="#menu" class="menu_link menu_btn"
+          ><i class="fa-solid fa-ice-cream"></i
+        ></a>
+        <div class="link_container">
+          <a href="#" class="menu_link menu_contact_link"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="menu_link menu_contact_link"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" class="menu_link menu_contact_link"
+            ><i class="fa-regular fa-map"></i
+          ></a>
+        </div>
+      </nav>
+    </section>
+    <!-- Sección para mostrar productos en una scroll box
+    <section class="shop">
+      <div class="product-card">
+        <div class="products">
+          <div class="shop-product product_1">1</div>
+          <div class="shop-product product_2">2</div>
+          <div class="shop-product product_3">3</div>
+          <div class="shop-product product_4">4</div>
+        </div>
+      </div>
+    </section>
+    -->
+  </body>
+</html>
